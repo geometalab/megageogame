@@ -1,0 +1,256 @@
+.col-sm-2,.col-md-2,.col-sm-3,.col-md-3,.col-sm-4,.col-md-4,.col-sm-5,.col-md-5,.col-sm-6,.col-md-6,.col-sm-8,.col-md-8,.col-sm-9,.col-md-9,.col-sm-12,.col-md-12 {
+min-height:1px;
+padding-left:5px;
+padding-right:5px;
+}
+body {
+background-image:url("images/Bern_BW100.png");
+}
+.panel-success, .panel-heading {
+-moz-border-radius:0;
+border-radius:0;
+}
+.panel-success .panel-heading {
+background-color:#960000;
+background-image:None !important;
+border-color:#960000;
+color:#fff;
+	padding:5px 15px;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffd0e9c6', GradientType=0);
+}
+#title-link,#title-link:hover {
+color:#fff;
+text-decoration:none;
+}
+#instruction-text {
+font-size:16px;
+	margin-left: 5px;
+}
+.list-group-item {
+padding:8px 12px;
+border-top-right-radius:0!important;
+border-top-left-radius:0!important;
+border-bottom-left-radius:0!important;
+border-bottom-right-radius:0!important;
+}
+.subRow {
+margin-left:0;
+margin-right:0;
+}
+#mapper {
+	height:412px;
+}
+#mapper,.col-sm-2,.breadcrumb-own, .stat-col {
+padding-left:0;
+padding-right:0;
+}
+.arrow {
+    margin-right: 7px;
+
+margin-bottom:5px;
+}
+.rect {
+        padding:5px 10px;
+background-color:#c6c6c6;
+}
+
+.rect > tri {
+color:#fff;
+font-size:16px;
+padding-left:2px;
+font-weight:500;
+line-height:1.1;
+padding-top:10px;
+}
+.tri {
+width:0; 
+height:0; 
+border-top:20px solid transparent;
+border-bottom:20px solid transparent;
+border-left:20px solid #c6c6c6;
+}
+.rect-curr {
+background-color:#960000;
+}
+.tri-curr {
+border-left:20px solid #960000;
+}
+.rect-chosen {
+background-color:#001eff;
+}
+.tri-chosen {
+border-left:20px solid #001eff;
+}
+#countdown-panel,#statistic-panel {
+height:261px;
+border:none;
+box-shadow:none;
+background-color:#fff;
+	margin-bottom:0;
+}
+#countdown-panel{
+height:110px;
+	margin-bottom:0;
+
+}
+.mission-row {
+	margin-top:20px;
+	margin-left:5px;
+	font-size:16px;
+}
+.col-md-9 .mission-panel {
+	height:110px;
+	border:none;
+	background-color: #ffffff;
+	margin-bottom: 0;
+	margin-left: -5px;
+}
+#instruction-panel {
+height:70px;
+border:none;
+box-shadow:none;
+background-color:#fff;
+	margin-bottom: 0;
+}
+.twitter-timeline{
+height:247px;
+width:100%!important;
+}
+.panel-success {
+background-color:transparent;
+}
+#countdown-panel  p {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+	zoom: 0.6;
+-moz-transform: scale(0.6)
+}
+.flip-clock-label {
+	visibility: hidden;
+}
+#bottom-panels,#level1-stat {
+margin-top:5px;
+}
+.imageHolder {
+height:205px;
+width:100%;
+}
+.imageHolder > img{
+padding-top:5px;
+display:block;
+margin:auto;
+max-height:100%;
+max-width:100%;
+}
+
+#legCol2,#legCol3,#legendPanel,#picPanel {
+height:259px;
+border:none;
+box-shadow:none;
+background-color:#fff;
+}
+#picPanel {
+	overflow:hidden;
+	height:392px;
+}
+#legCol3{
+	height:261px;
+	margin-bottom: 0;
+}
+.col-md-3 #bern-panel {
+    background-color: white;
+    height: 262px;
+    margin-bottom: 0;
+    box-shadow: none;
+    border: none;
+}
+.bern-logo img {
+	    max-width: 100%;
+    margin-top: 20px;
+}
+#instruction-header {
+background-image:None !important;
+border-color:#960000!important;
+background-color: #960000;	
+}
+.color-stop {
+background-image:None !important;
+border-color:#960000!important;
+background-color: #960000;
+}
+#stat-row {
+margin-left:0;
+margin-right:0;
+width:100%;
+}
+
+.instruction-header-non-trafficlight {
+padding:10px 15px !important;
+}
+a:hover {
+	text-decoration: none;
+}
+.timeline {
+	border-radius:0!important;
+}
+#twitter-panel {
+	height: 392px;
+	border-color:transparent;
+	
+}
+
+#twitter-panel iframe {
+	height:383px!important;
+}
+#sogi-panel {
+	height: 261px;
+	border-color:transparent;
+	margin-bottom: 0;
+
+}
+
+.timeline .stream {
+	width:100%;
+}
+.mission-panel, .replay-panel {
+	background-color: white;
+    border: none;
+    height: 110px;
+    margin-bottom: 0;
+}
+#time {
+	    font-size: 57px;
+    margin-left: 20px;
+}
+#timer {
+}
+
+.replay {
+	background-color:#222222;
+	margin:5px;
+	margin-top:15px;
+}
+.replay .text {
+	color:white;
+	font-size:16px;
+}
+.replay img{
+
+	max-width:50%;
+}
+
+#share-panel {
+	    margin-bottom: 0;
+    background-color: white;
+    border: none;
+    height: 68px;
+}
+
+.sharers {
+	margin-left:5px;
+	margin-top:5px;
+}
+#sogi-panel {
+	background-color:white;
+}

@@ -1,0 +1,111 @@
+{% extends "skeleton.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link href="/static/content.css" rel="stylesheet">
+    <link href="/static/instruction.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container" id="instruction-container">
+        <div class="row">     
+            <div class="col-md-3">
+                <h2 id="inti">
+                    Anleitung
+                </h2>
+                <div class="sub-header s-header-inst"></div>
+            </div>        
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <p>
+                    Willkommen zu dem erste MegaGEOGame in der Schweiz.<br>
+                    Das MegaGEOGame erlaubt 6 Personengruppen (Klassen) von beliebiger Grösse
+                    in sechs herausfordernden Levels miteinander und gegeneinander zu spielen.<br>
+                    Eine weitere Spezialität des MegaGEOGame ist die aktive Steuerung des Spiels durch eine Jury.
+                    Die Jury überwacht die Teilnehmer, kontrolliert die Spielphasen (Instruction, Playing, Stop (Leveländerung))
+                    und bewertet teilweise Ergebnisse selbst. Das Game kann über ein <a hred="geoschooldaytest.herokuapp.com">Liveinfopanel</a>
+                    verfolgt werden.<br>
+                    Dieses Liveinfopanel bindet Socialmedia (Twitter, Instagramm), die Datenerfassung per Karte, die Statistik der Daten
+                    und die Rangliste in Echtzeit ein. Das Game ist auch zu einem späteren Zeitpunkt spielbar.
+                </p>
+                <p>
+                    Die Levels basieren auf individuellen Aufgaben, welche durch die Jury in einem definierten Zeitmodes freigeschaltet werden.
+                </p>
+                <p>
+                    Viel Spass beim ersten MegaGEOGame!
+                </p>
+                <p>
+                    Fühlt euch frei, eure Erfahrungen mitzuteilen:
+                </p>
+                <p>
+                    Twitter: #geoschoolday2016<br>
+                    Instagramm: #geoschoolday2016
+                </p>
+            </div>
+        </div>
+        <div class="row" id="button-row">
+            <div class="col-md-3 col-md-offset-3">
+                <p>
+                    <div class="centered">
+                        <a href="/input-level1" role="button" class="btn btn-primary btn-lg btn-int btn-dis" id="button1">
+                            Level 1
+                        </a>
+                    </div>    
+                </p>
+                <p>
+                    <div class="centered">
+                        <a href="/input-level2" role="button" class="btn btn-primary btn-lg btn-int btn-dis" id="button2">
+                            Level 2
+                        </a>
+                    </div>    
+                </p>
+                <p>
+                    <div class="centered">
+                        <a href="/input-level3" role="button" class="btn btn-primary btn-lg btn-int btn-dis" id="button3">
+                            Level 3
+                        </a>
+                    </div>    
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    <div class="centered">
+                        <a href="/input-level4" role="button" class="btn btn-primary btn-lg btn-int btn-dis" id="button4">
+                            Level 4
+                        </a>  
+                    </div>  
+                </p>
+                <p>
+                    <div class="centered">
+                        <a href="/input-level5" role="button" class="btn btn-primary btn-lg btn-int btn-dis" id="button5">
+                            Level 5
+                        </a>
+                    </div>    
+                </p>
+                <p>
+                    <div class="centered">
+                        <a href="/input-level6" role="button" class="btn btn-primary btn-lg btn-int btn-dis" id="button6">
+                            Level 6
+                        </a>
+                    </div>    
+                </p>
+            </div>
+            <div class ="col-md-3">
+                <div class="panel panel-success" id="countdown-panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" id="countdown-header">
+                            Countdown
+                        </h3>
+                    </div>
+                    <p id="timer"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/instruction_set_level.js"></script>
+<script src="/static/countdown.js"></script>
+{% endblock %}

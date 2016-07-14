@@ -1,0 +1,52 @@
+.seps {
+height:10px; 
+}
+.form-row {
+margin-top:30px;
+}
+.form-control {
+border-radius:0;
+}
+#submit-button  {
+margin-top:13px;
+}
+#instr-button {
+margin-top:23px;
+}
+#result {
+font-size:20px;
+margin:0 auto;
+text-align:center;
+width:100%;
+}
+#invisible-row {
+margin-top:40px;
+height:100px;
+}
+.left-part {
+float:left;
+width:50%;
+}
+.right-part {
+float:right;
+width:50%;
+}
+#map-row-2 {
+margin-top:50px;
+}
+#match-row {
+	margin-left:0;
+	margin-right:0;
+}
+#match-col {
+	border: 5px solid #960000;
+}
+#measure {
+max-height:100%;
+margin:0 auto;
+}
+.measure {
+height:160px;
+margin-top:10px;
+width:100%;
+}

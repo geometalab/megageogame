@@ -1,0 +1,65 @@
+{% extends "skeleton.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link href="/static/content.css" rel="stylesheet">
+    <link href="/static/instruction.css" rel="stylesheet">
+    <link href="/static/input-level2.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>
+                    Level 2
+                </h2>
+                <div class="sub-header s-header-inst"></div>
+            </div>
+        
+	        <div class="col-md-3 col-md-offset-6">
+	            <div class="centered">
+	                <a href="/instruction" role="button" class="btn btn-primary btn-lg btn-int" id="instr-button">Zurück</a>
+	            </div>
+	        </div>
+	    </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h3>
+                    Bildstandort
+                </h3>
+                <div class="sub-header s-header-inst"></div>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <h4>
+                    Aufgabenstellung:
+                </h4>
+                <p>
+                    Weise die 3 Bilder in deinem Sektor an den richtigen drei der 20 Standorten zu. Öffne dazu im Collector App diese App: MGG2016IP_SekI_M2_ImageMapping
+                </p>
+                <p>
+                    Weist die 3 Bilder den richtigen 3 Standorten in eurem Sektor zu.
+                1. Öffnet in der Collector App die Karte: MGG2016CA_SekI_M2_ImageMapping.
+                2. Wählt einen Punkt aus und klickt dann auf das Editiersymbol unten links.
+                3. Gebt die Zahl des Bildes und eure Klasse ein.
+                4. Klickt auf das Häkchen oben links.
+                </p>
+                <h4>
+                    Bewertung:
+                </h4>
+                <p>
+                    Attributmachting gibt Punkte; 0,1,2,3 (Range 0 - 3)
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="seps"></div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

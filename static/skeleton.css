@@ -1,0 +1,126 @@
+#head-container{
+margin-bottom:5px;
+}
+#header-row {
+background-color:#fff;
+margin-left:-10px;
+margin-right:-10px;
+}
+#title-col {
+padding-left:0;
+padding-right:8px;
+}
+#geosummit-logo {
+	max-height: 100%;
+	margin: 0 auto;
+}
+#sogi-col {
+	padding-right: 0;
+}
+.sub-header {
+background-color:#960000;
+height:10px;
+
+}
+.seperator {
+background-color:#EEE;
+height:5px;
+margin-top:5px;
+}
+.logos {
+height:100px;
+margin-top:5px;
+}
+.sogi-logo {
+float:left;
+height:90px;
+margin-top:5px;
+width:100%;
+
+}
+.sogi-logo > a, esri-logo a {
+height:82px;
+width:100%;
+}
+.sogi-logo > a > img {
+display:block;
+float:left;
+margin:auto;
+max-height:100%;
+max-width:100%;
+    margin-left:60px;
+}
+.copyright {
+color:#7e7e7e;
+font-size:20px;
+margin-top:30px;
+text-align:center;
+}
+.hsr-link {
+font-size:20px;
+}
+.esri-logo {
+float:right;
+height:60px;
+margin-top:-20px;
+width:100%;
+}
+.esri-logo > a > img {
+display:block;
+float:right;
+margin:22px auto;
+max-height:100%;
+max-width:100%;
+}
+.hsr-logo {
+height:60px;
+margin:5px auto;
+width:100%;
+}
+.hsr-logo > a > img {
+display:block;
+margin:auto;
+    width: 100%;
+    height: 68px;
+}
+.geosummit-logo {
+height:60px;
+margin-top:10px;
+width:100%;
+padding: 10px;
+}
+.geosummit-logo > img {
+display:block;
+margin:auto;
+max-width:100%;
+max-height:100%;
+}
+#titleSet, #titleSet:hover {
+color:#000;
+text-decoration:none;
+}
+.btn-int {
+background-color:#960000;
+background-image:none;
+border-color:#960000;
+border-radius:0;
+margin-top:22px;
+}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
+ color:#fff;
+ background-color:#7b0000;
+ border-color:#7b0000;
+}
+.btn-dis,.btn-dis:hover,.btn-dis:focus,.btn-dis:active,.btn-dis.active {
+background-color:#c6c6c6!important;
+border-color:#c6c6c6!important;
+}
+.centered {
+text-align:center;
+}
+.invisible-button {
+visibility:hidden;
+}
+#footer-container {
+background-color:#fff;
+}

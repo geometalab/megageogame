@@ -1,0 +1,54 @@
+{% extends "skeleton.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link href="/static/content.css" rel="stylesheet">
+    <link href="/static/instruction.css" rel="stylesheet">
+    <link href="/static/input-level5.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>
+                    Level 5
+                </h2>
+                <div class="sub-header s-header-inst"></div>
+            </div>
+            <div class="col-md-3 col-md-offset-6">
+                <div class="centered">
+                    <a href="/instruction" role="button" class="btn btn-primary btn-lg btn-int" id="instr-button">Zurück</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9">
+                
+                <h4>
+                    Aufgabenstellung:
+                </h4>
+                <p>
+                    Gleichseitiges Dreieck-Mapping: Mit 3 GPS-Koordinate von Tractalis-Trackern ein gleichseitiges, Dreieck bauen. Bewertung: nach 10 Minuten. Öffne dazu im Collector App diese App: MGG2016IP_SekI_M5_SketchMapping
+
+                </p>
+                <p>Gleichseitiges Dreieck-Mapping: Mit 3 GPS-Koordinate von Tractalis-Trackern ein gleichseitiges Dreieck bauen. Bewertung: nach 10 Minuten. Nutzt für das überprüfen der Form das Liveinfopanel. Dieses wird von der Jury nach Gleichseitigkeit und Grösse bewertet.</p>
+
+                <h4>
+                    Bewertung:
+                </h4>
+                <p>
+                    Punktwertung qualitativ durch Jury: schlecht: 1 mittel: 2 gut: 3 (Range 0 - 3)
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="seps"></div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

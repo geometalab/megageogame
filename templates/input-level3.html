@@ -1,0 +1,65 @@
+{% extends "skeleton.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link href="/static/content.css" rel="stylesheet">
+    <link href="/static/instruction.css" rel="stylesheet">
+    <link href="/static/input-level3.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>
+                    Level 3
+                </h2>
+                <div class="sub-header s-header-inst"></div>
+            </div>
+            <div class="col-md-3 col-md-offset-6">
+                <div class="centered">
+                    <a href="/instruction" role="button" class="btn btn-primary btn-lg btn-int" id="instr-button">Zurück</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h3>
+                    Wild Bicycles
+                </h3>
+                <div class="sub-header s-header-inst"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                
+                <h4>
+                    Aufgabenstellung:
+                </h4>
+                <p>
+                    Wir räumen Bern auf. Mappe alle wild parkierten Velos in deinem Sektor. Beweis dein Fund mit einem Bildattachment samt GeoSummit-Ticket.
+                    Öffne dazu im Collector App diese App: MGG2016IP_SekI_M3_WildBicycles
+                </p>
+                <p>Wild bicycles: Wir räumen Bern auf. Mappe alle wild parkierten Velos in deinem Sektor. Beweist euren Fund mit einem Foto, auf welchem eines eurer GeoSummit-Ticket zu sehen ist.
+1. Öffnet in der Collector App die Karte: MGG2016CA_SekI_M3_WildBicycles.
+2. Klickt auf euren Standort auf der Karte und dann auf das + im unteren Bereich.
+Gebt alle Daten ein (Bild nicht vergessen).
+3. Klickt auf das Häkchen oben links.</p>
+
+
+                <h4>
+                    Bewertung:
+                </h4>
+                <p>
+                    Pro Velo ein Punkt, anschliessend alle Punkte geteilt durch 20
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="seps"></div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

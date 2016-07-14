@@ -1,0 +1,37 @@
+.seps {
+height:10px; 
+}
+.form-row {
+margin-top:30px;
+}
+.form-control {
+border-radius:0;
+}
+#submit-button  {
+margin-top:13px;
+}
+#instr-button {
+margin-top:23px;
+}
+#result {
+margin:0 auto;
+font-size:20px;
+text-align:center;
+width:100%;
+}
+#invisible-row {
+margin-top:40px;
+height:50px;
+}
+#white-shoe1 {
+max-height:100%;
+margin:0 auto;
+}
+.white-shoe1 {
+height:160px;
+margin-top:10px;
+width:100%;
+}
+#map-row-4 {
+margin-top:50px;
+}

@@ -1,0 +1,42 @@
+.s-header-inst {
+margin-bottom:30px;
+}
+.btn-int {
+background-color:#960000;
+background-image:none;
+border-color:#960000;
+border-radius:0;
+}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
+ color:#fff;
+ background-color:#7b0000;
+ border-color:#7b0000;
+}
+.btn-dis,.btn-dis:hover,.btn-dis:focus,.btn-dis:active,.btn-dis.active {
+background-color:#c6c6c6!important;
+border-color:#c6c6c6!important;
+}
+.centered {
+text-align:center;
+}
+#button-row {
+margin:50px 0;
+}
+#button-row a {
+width:100%;
+}
+.disabled {
+cursor:default;
+pointer-events:none;
+}
+#countdown-panel {
+margin-top:33px;
+}
+#countdown-header {
+text-align:center;
+font-size:18px;
+line-height:1.33;
+font-weight:400;
+vertical-align:middle;
+font-family:"Helvetica Neue", Helvetica, Arial, sens-serif;
+}

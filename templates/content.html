@@ -1,0 +1,242 @@
+{% extends "skeleton.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link href="/static/content.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+    <script src="http://js.arcgis.com/3.9/"></script>
+    
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="panel panel-success" id="instruction-panel">
+                        <a href="/instruction" id="title-link">
+                            <div class="panel-heading" id="instruction-header">
+                                <h3 class="panel-title" id="level-title"></h3>
+                            </div>
+                        </a>
+                        <p id="instruction-text"></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-success" id="share-panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" >#geoschoolday2016</h3>
+                            </div>
+                            <div class="sharers">
+                                <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share?linkurl=megageogame2016sek1&amp;linkname=MegaGeoGame"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_email"></a>
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.linkname = "MegaGeoGame";
+a2a_config.linkurl = "megageogame2016sek1";
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-success mission-panel">
+                        <div class="panel-heading" >
+                            <h3 class="panel-title" id="level-title">Missionen</h3>
+                        </div>
+                        <div class="row subRow mission-row">
+                            <span class="breadcrumb-own">
+                                <span class="arrow" id="arrow1" data-level="1">
+                                    <span class="rect" id="rect1">1</span>
+                                </span>
+                                <span class="arrow" id="arrow2" data-level="2">
+                                    <span class="rect" id="rect2">2</span>
+                                </span>
+                                <span class="arrow" id=arrow3 data-level="3">
+                                    <span class="rect" id="rect3">3</span>
+                                </span>
+                            </span>
+                            <span class="breadcrumb-own">
+                                <span class="arrow" id="arrow4" data-level="4">
+                                    <span class="rect" id="rect4">4</span>
+                                </span>
+                                <span class="arrow" id="arrow5" data-level="5">
+                                    <span class="rect" id="rect5">5</span>
+                                </span>
+                                <span class="arrow" id="arrow6" data-level="6">
+                                    <span class="rect" id="rect6">6</span>
+                                </span>
+                                <span class="arrow" id="arrow7" data-level="7">
+                                    <span class="rect" id="rect6">7</span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-success" id="countdown-panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Countdown
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p id="timer"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="time"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="panel panel-success replay-panel">
+                        <div class="panel-heading" >
+                            <h3 class="panel-title"> LIVE & REPLAY TRACK</h3>
+                        </div>
+                        <div class="replay">
+                            <a href="http://live.tractalis.com/geoschoolday/">
+                                <img src="http://tractalisstorage.blob.core.windows.net/events/Resources/Common/html5/Trans-100-256-01-ws-html5.png"/>
+                                <span class="text">Live / Replay</span>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        <div class="row">
+            <div class="col-md-3">
+                 <div class="panel panel-success" id="twitter-panel">
+                    <a href="https://twitter.com/search?f=realtime&q=geoschoolday&src=typd">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Twitter: #geoschoolday2016
+                            </h3>
+                        </div>
+                        <a class="twitter-timeline" href="https://twitter.com/hashtag/geoschoolday2016" data-widget-id="684739455090077696">#geoschoolday2016 Tweets</a>
+                    </a>
+                </div>
+                 <div class="panel panel-success" id="sogi-panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Partner
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="sogi-logo">
+                            <a href="http://www.sogi.ch/">
+                                <img alt="Sogi" src="static/images/sogi_rgb.jpg" />
+                            </a>
+                        </div>
+                        <div class="bern-logo">
+                            <a href="http://www.bernmobil.ch/">
+                                <img alt="Bern Mobil" src="static/images/bern.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <div class="row subRow">
+                    <div class="col-md-12">
+                        <div class="row subRow">
+                            <div class="col-sm-12" id="mapper"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row subRow">
+                    <div class="col-md-6">
+                        <div class="panel panel-success" id="legCol3">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    Class Ranking
+                                </h3>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item" id="place1"></li>
+                                <li class="list-group-item" id="place2"></li>
+                                <li class="list-group-item" id="place3"></li>
+                                <li class="list-group-item" id="place4"></li>
+                                <li class="list-group-item" id="place5"></li>
+                                <li class="list-group-item" id="place6"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                         <div class="panel panel-success" id="statistic-panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" id="statistics-titel">
+                                    Live Statistics
+                                </h3>
+                            </div>
+                            <div id=statistics></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <a href="http://www.gramfeed.com/instagram/tags#geoschoolday">
+	                <div class="panel panel-success" id="picPanel">
+	                    <div class="panel-heading">
+	                        <h3 class="panel-title">
+	                            Instagram: #geoschoolday2016
+	                        </h3>
+	                    </div>
+	                    <div class="imageHolder">
+                            <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+<iframe src="//lightwidget.com/widgets/7710460622f822845d363e61f36d4d1535b1db5c.html" id="lightwidget_7710460622" name="lightwidget_7710460622"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+</div>
+	                </div>
+                </a>
+                 <div class="panel panel-success" id="bern-panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Powered By
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="hsr-logo">
+                            <a href="http://www.ifs.hsr.ch/Geometa-Lab.12520.0.html">
+                                <img alt="Geometa Lab" src="static/images/logo-hsr.jpg" />
+                            </a>
+                        </div>
+                        <div class="esri-logo">
+                            <a href="http://www.esri.ch/">
+                                <img alt="ESRI" src="static/images/esriLogo.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="/static/manual_override.js"></script>
+    <script src="/static/get_current_level.js"></script>
+    <script src="/static/update_ranking.js"></script>
+    <script src="/static/countdown.js"></script>
+    <script src="/static/infopanel_set_level.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends "skeleton.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link href="/static/content.css" rel="stylesheet">
+    <link href="/static/instruction.css" rel="stylesheet">
+    <link href="/static/input-level1.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>
+                    Admin
+                </h2>
+                <div class="sub-header s-header-inst"></div>
+            </div>
+            <div class="col-md-3 col-md-offset-6">
+                <div class="centered">
+                    <a href="/" role="button" class="btn btn-primary btn-lg btn-int" id="instr-button">Zurück</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h3>
+                    Login
+                </h3>
+                <div class="sub-header s-header-inst"></div>
+            </div>        
+        </div>
+        <div class="row" id="form-row">
+            <div class="col-md-3">
+                   <p>
+                    <div class="centered">
+                        <div class="form-group">
+                            <label for="estimate-input">Name</label>
+                            <input type="text" id="estimate-input" class ="form-control" name="name">
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    <div class="centered">
+                        <div class="form-group">
+                            <label for="estimate-input">Passwort</label>
+                            <input type="text" id="estimate-input" class ="form-control" name="password">
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    <div class="centered">
+                        <button class="btn btn-primary btn-lg btn-int" id="submit-button">Login</button>
+                    </div>
+                </p>
+            </div>
+            
+        </div>
+        <div class="row" id="invisible-row">
+            <div id="result"></div>
+        </div>
+
+    </div>
+    <div class="seps"></div>
+{% endblock %}
+
+{% block scripts %}
+    <script type=text/javascript>
+		$(function () {
+		    "use strict";
+		    $('button#submit-button').bind('click', function () {
+                var json = {
+                name: $('input[name="name"]').val(),
+                password: $('input[name="password"]').val()
+                };
+                console.log(json);
+                $.ajax('/login', {
+                    type: 'POST',
+                    data: JSON.stringify(json),
+                    contentType: 'application/json',
+                    success: function(data, textStatus, jqXHR){
+                        document.write(data);
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        console.log(errorThrown);
+                    }
+                });
+                {#  $.getJSON('/login', {
+		            name: $('input[name="name"]').val(),
+		            password: $('input[name="password"]').val()
+		        }, function (data) {
+		            $("#result").text(data.result);
+		        });#}
+		        return false;
+		    });
+		});
+    </script>
+{% endblock %}

@@ -1,0 +1,1 @@
+web: gunicorn mega_geo_game:APP

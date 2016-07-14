@@ -1,0 +1,37 @@
+.seps {
+height:10px; 
+}
+.form-row {
+margin-top:30px;
+}
+.form-control {
+border-radius:0;
+}
+#submit-button  {
+margin-top:13px;
+}
+#instr-button {
+margin-top:23px;
+}
+#result {
+font-size:20px;
+margin:0 auto;
+text-align:center;
+width:100%;
+}
+#invisible-row {
+margin-top:40px;
+height:100px;
+}
+#map-row-5 {
+margin-top:50px;
+}
+#leveler {
+max-height:100%;
+margin:0 auto;
+}
+.leveler {
+height:160px;
+margin-top:10px;
+width:100%;
+}

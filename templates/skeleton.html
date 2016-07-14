@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Skeleton for geoschoolday-webpage">
+    <meta name="author" content="GeometaLab">
+    <link rel="icon" href="static/images/icon2.ico">
+    <title>MegaGEOGame</title>
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/static/skeleton.css" rel="stylesheet">
+    <link href="/static/flipclock.css" rel="stylesheet">
+    
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="container" id=head-container>
+        <div class="row" id="header-row">
+            <div class="col-md-3" id="title-col">
+                <a href="/" id="titleSet">
+                    <h1>MegaGEOGame</h1>
+                    <div class="sub-header"></div>
+                </a>
+            </div> 
+            <div class="col-md-6">
+                <div class="centered">
+                    <button class="btn btn-primary btn-lg btn-int invisible-button" id="live-button">Back to live-mode</button>  
+                </div>
+            </div>
+	        <div class="col-md-3" id="sogi-col">
+                <div class="geosummit-logo">
+                    <a href="http://www.geosummit.ch/">
+                        <img alt="GEO-Summit" src="static/images/geo-summit.jpg" class="img-responsive" id="geosummit-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/static/dist/js/bootstrap.min.js"></script>
+    <script src="/static/docs/assets/js/docs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.min.js"></script>
+    <script src="/static/flipclock.min.js"></script>
+    {% block scripts %}
+    {% endblock %}
+    <script src="/static/live_mode.js"></script>
+  </body>
+</html>
